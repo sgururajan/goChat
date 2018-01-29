@@ -1,0 +1,8 @@
+# exes
+*.exe
+
+#debugs
+debug*
+
+# vs code
+.vscode

@@ -1,0 +1,21 @@
+.register-container {
+  padding-top: 3rem;
+  .register-container>* {
+    width: 100%;
+  }
+  .register-card {
+    Width: 500px;
+  }
+  .register-content {
+    padding-top: 1.5rem;
+  }
+  .register-content>* {
+    width: 100%;
+  }
+  .register-card-actions {
+    padding-bottom: 1rem;
+    p {
+      padding-top: 0.5rem;
+    }
+  }
+}

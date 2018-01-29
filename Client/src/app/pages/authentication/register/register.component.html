@@ -1,0 +1,48 @@
+<div class="content-center-aligned register-container">
+  <mat-card class="register-card">
+    <!-- <mat-toolbar color="primary">
+      <span>Register</span>
+    </mat-toolbar> -->
+
+    <h2>
+      <span>Register</span>
+    </h2>
+
+    <mat-card-content class="register-content">
+      <mat-form-field>
+        <input matInput placeholder="Email" [formControl]="email" required/>
+        <mat-error *ngIf=email.invalid>{{getEmailErrorMessage()}}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="password" matInput placeholder="Password" required [formControl]="password">
+        <mat-error *ngIf="password.invalid">{{getPasswordErrorMessage()}}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input type="password" matInput placeholder="Confirm Password" required [formControl]="confirmPassword">
+        <mat-error *ngIf="confirmPassword.invalid">{{getConfirmPasswordErroMessage()}}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="First Name" required [formControl]="firstName">
+        <mat-error *ngIf="firstName.invalid">{{getFirstNameErrorMessage()}}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Last Name" [formControl]="lastName">
+      </mat-form-field>
+
+      <mat-form-field>
+        <input matInput placeholder="Nick Name (Optional)" [formControl]="nickName">
+      </mat-form-field>
+
+    </mat-card-content>
+    <mat-card-actions align="center" class="register-card-actions">
+      <button type="submit" mat-raised-button color="primary" (click)="onSubmit()">Submit</button>
+      <p>Already have an account?</p>
+      <button mat-button (click)="login()">Login</button>
+    </mat-card-actions>
+  </mat-card>
+
+</div>

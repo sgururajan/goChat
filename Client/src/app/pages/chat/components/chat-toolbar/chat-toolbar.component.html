@@ -1,0 +1,24 @@
+<!-- <div class="chat-toolbar-container ">
+
+  
+</div> -->
+
+<mat-toolbar class="toolbar-container">
+  <span>
+    <button mat-icon-button (click)="sideNav.open()">
+      <mat-icon class="mat-18">menu</mat-icon>
+    </button>
+  </span>
+  <span class="chat-toolbar-space-filler"></span>
+  <span class="top-right-menu">
+    <button mat-icon-button [matMenuTriggerFor]="moreMenu">
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #moreMenu="matMenu">
+      <button mat-icon-button (click)="onClick">
+        <mat-icon class="mat-18"></mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </span>
+</mat-toolbar>

@@ -1,0 +1,21 @@
+.login-container {
+  padding-top: 3rem;
+  .login-container>* {
+    width: 100%;
+  }
+  .login-card {
+    width: 500px;
+  }
+  .login-content {
+    padding-top: 1.5rem;
+  }
+  .login-content>* {
+    width: 100%;
+  }
+  .login-card-action {
+    padding-bottom: 1rem;
+    p {
+      padding-top: 0.5rem;
+    }
+  }
+}

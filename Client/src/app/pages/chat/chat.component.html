@@ -1,0 +1,15 @@
+<!-- <p>
+  chat works!
+</p> -->
+
+<div class="chat-container">
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="over" #sideNav align="start">
+      <app-side-nav-bar></app-side-nav-bar>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <app-chat-toolbar [sideNav]="sideNav"></app-chat-toolbar>
+      <app-side-bar></app-side-bar>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
