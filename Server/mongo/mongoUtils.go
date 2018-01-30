@@ -6,6 +6,7 @@ import (
 	"gopkg.in/mgo.v2/bson"
 )
 
-func NewObjectId() string {
+// NewObjectID - creates new bson objectid
+func NewObjectID() string {
 	return strings.ToUpper(bson.NewObjectId().Hex())
 }

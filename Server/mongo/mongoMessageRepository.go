@@ -60,7 +60,7 @@ func (repo *MessageRepository) GetMessagesByConversation(conversationID string, 
 
 // AddMessage - Add message
 func (repo *MessageRepository) AddMessage(message models.Message) error {
-	message.MessageID = NewObjectId()
+	message.MessageID = NewObjectID()
 	err := repo.collection.Insert(message)
 	return err
 }

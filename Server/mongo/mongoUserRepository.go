@@ -88,7 +88,7 @@ func (repo *UserRepository) Create(user models.User) (string, error) {
 		return "", fmt.Errorf("User with email %s already exists", user.Email)
 	}
 
-	user.ID = NewObjectId()
+	user.ID = NewObjectID()
 
 	err = repo.userCollection.Insert(user)
 

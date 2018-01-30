@@ -66,7 +66,7 @@ func (repo *ConversationRepository) GetConversationsForUserID(userID string) ([]
 
 // AddConversation - AddConversation
 func (repo *ConversationRepository) AddConversation(conversation models.Conversation) (string, error) {
-	cID := NewObjectId()
+	cID := NewObjectID()
 	conversation.ID = cID
 	err := repo.collection.Insert(conversation)
 	return "", err
