@@ -1,0 +1,18 @@
+@import '~@angular/material/theming';
+@include mat-core();
+// typography
+// dark theme
+$gochat-app-primary: mat-palette($mat-indigo);
+$gochat-app-accent: mat-palette($mat-pink);
+$gochat-light-theme: mat-light-theme($gochat-app-primary, $gochat-app-accent);
+.light-theme {
+  @include angular-material-theme($gochat-light-theme)
+}
+
+// $gochat-app-dark-primary: mat-palette($mat-purple);
+// $gochat-app-dark-accent: mat-palette($mat-green);
+// $gochat-dark-theme: mat-dark-theme($gochat-app-dark-primary, $gochat-app-dark-accent);
+$gochat-dark-theme: mat-dark-theme($gochat-app-primary, $gochat-app-accent);
+.dark-theme {
+  @include angular-material-theme($gochat-dark-theme);
+}

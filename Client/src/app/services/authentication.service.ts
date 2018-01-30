@@ -32,15 +32,19 @@ export class AuthenticationService {
 
     let currentUser = loginResponse as CurrentUser;
     localStorage.setItem('currentUser', JSON.stringify(currentUser));
+    localStorage.setItem('access_token', currentUser.accessToken);
     return true;
   }
 
   isLoggedIn(): Observable<boolean> | Promise<boolean> | boolean {
-    var currentUser = JSON.parse(localStorage.getItem('currentUser')) as CurrentUser;
-    return currentUser && currentUser.accessToken.length > 0;
+    var token = localStorage.getItem('access_token');
+    return token && token.length > 0;
+    // var currentUser = JSON.parse(localStorage.getItem('currentUser')) as CurrentUser;
+    // return currentUser && currentUser.accessToken.length > 0;
   }
 
   logout() {
+    localStorage.removeItem('access_token');
     localStorage.removeItem('currentUser');
     return true;
   }

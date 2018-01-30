@@ -1,4 +1,4 @@
-package db
+package mongo
 
 import (
 	"fmt"
@@ -10,33 +10,33 @@ import (
 	"gopkg.in/mgo.v2"
 )
 
-// MongoUserRepository - MongoUserRepository
-type MongoUserRepository struct {
+// UserRepository - MongoUserRepository
+type UserRepository struct {
 	session        *mgo.Session
 	userCollection *mgo.Collection
 }
 
 const userCollectionName = "Users"
 
-// NewMongoUserRepository - creates a new instance of MongoUserRepository
-func NewMongoUserRepository(connString, dbName string) *MongoUserRepository {
+// NewUserRepository - creates a new instance of MongoUserRepository
+func NewUserRepository(connString, dbName string) *UserRepository {
 	session, err := mgo.Dial(connString)
 	if err != nil {
 		utils.FailOnError(fmt.Errorf("Error while dialing Mongo: %s", err))
 	}
 
 	collection := session.DB(dbName).C(userCollectionName)
-	client := MongoUserRepository{
+	client := &UserRepository{
 		session:        session,
 		userCollection: collection,
 	}
 
-	ensureIndexs(session, dbName)
+	client.ensureIndexes(session, dbName)
 
-	return &client
+	return client
 }
 
-func ensureIndexs(s *mgo.Session, dbName string) {
+func (repo *UserRepository) ensureIndexes(s *mgo.Session, dbName string) {
 	session := s.Copy()
 	defer session.Close()
 
@@ -79,7 +79,7 @@ func ensureIndexs(s *mgo.Session, dbName string) {
 // Interface members
 
 // Create - Create
-func (repo *MongoUserRepository) Create(user models.User) (string, error) {
+func (repo *UserRepository) Create(user models.User) (string, error) {
 	// check if the user already exist
 	var tmpUser models.User
 	err := repo.userCollection.Find(bson.M{"email": user.Email}).One(&tmpUser)
@@ -88,15 +88,24 @@ func (repo *MongoUserRepository) Create(user models.User) (string, error) {
 		return "", fmt.Errorf("User with email %s already exists", user.Email)
 	}
 
+	user.ID = NewObjectId()
+
 	err = repo.userCollection.Insert(user)
 
 	return "", nil
 }
 
 // GetUserByEmail - GetUserByEmail
-func (repo *MongoUserRepository) GetUserByEmail(email string) (models.User, error) {
+func (repo *UserRepository) GetUserByEmail(email string) (models.User, error) {
 	var user models.User
 	err := repo.userCollection.Find(bson.M{"email": email}).One(&user)
+	return user, err
+}
+
+// GetUserByID - GetUserByID
+func (repo *UserRepository) GetUserByID(id string) (models.User, error) {
+	var user models.User
+	err := repo.userCollection.Find(bson.M{"id": id}).One(&user)
 	return user, err
 }
 

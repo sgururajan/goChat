@@ -18,7 +18,7 @@ const (
 
 // User - User Model
 type User struct {
-	ID             string           `json:"id, omitempty"`
+	ID             string           `json:"id, omitempty" bson:"_id"`
 	FirstName      string           `json:"firstName, omitempty"`
 	LastName       string           `json:"lastName, omitempty"`
 	Email          string           `json:"email, omitempty"`

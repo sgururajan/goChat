@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { JwtModule } from '@auth0/angular-jwt';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -26,7 +27,15 @@ import { AuthenticationService } from './services/authentication.service';
     HttpClientModule,
     NgbModule.forRoot(),
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    JwtModule.forRoot({
+      config: {
+        tokenGetter: () => {
+          return localStorage.getItem('access_token');
+        },
+        skipWhenExpired: true,
+      }
+    })
   ],
   providers: [
     AuthGuard,

@@ -10,6 +10,7 @@ import {
   MatIconModule,
   MatSidenavModule
 } from '@angular/material';
+import { OverlayModule } from '@angular/cdk/overlay';
 
 @NgModule({
   imports: [
@@ -20,7 +21,8 @@ import {
     MatToolbarModule,
     MatMenuModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    OverlayModule
   ],
   exports: [
     MatButtonModule,
@@ -30,7 +32,8 @@ import {
     MatToolbarModule,
     MatMenuModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    OverlayModule
   ],
   declarations: []
 })
