@@ -9,3 +9,19 @@
   align-items: center;
   justify-content: center;
 }
+
+.full-height {
+  height: 100%;
+}
+
+.flex-full-height {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  align-items: stretch;
+  height: 100%;
+}

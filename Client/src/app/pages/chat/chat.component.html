@@ -9,7 +9,11 @@
     </mat-sidenav>
     <mat-sidenav-content>
       <app-chat-toolbar [sideNav]="sideNav"></app-chat-toolbar>
-      <app-side-bar></app-side-bar>
+      <div class="flex-full-height">
+        <app-side-bar class="content-vertical-stretch"></app-side-bar>
+        <app-message-list class="chat-content-noshrink"></app-message-list>
+        <app-chat-workspace class="chat-content-fillspace"></app-chat-workspace>
+      </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

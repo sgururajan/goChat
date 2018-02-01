@@ -30,7 +30,7 @@ type TokenClaims struct {
 
 // AuthService - AuthService
 type AuthService struct {
-	userRepository db.IUserRespository
+	userRepository db.IUserRepository
 }
 
 // Token - Token
@@ -47,7 +47,7 @@ type LoginResponse struct {
 }
 
 // NewAuthService - create new instance of auth service
-func NewAuthService(userRepo db.IUserRespository) *AuthService {
+func NewAuthService(userRepo db.IUserRepository) *AuthService {
 	authService := AuthService{
 		userRepository: userRepo,
 	}

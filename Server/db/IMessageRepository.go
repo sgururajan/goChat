@@ -6,4 +6,5 @@ import "goChat/Server/models"
 type IMessageRepository interface {
 	GetMessagesByConversation(conversationID string, page, count int) ([]models.Message, error)
 	AddMessage(message models.Message) error
+	UpdateMessageAsRead(msgID, participantID string)
 }

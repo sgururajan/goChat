@@ -19,8 +19,8 @@ export class ChatComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.overlayContainer.getContainerElement().classList.add('dark-theme');
-    this.componentClass = 'dark-theme';
+    // this.overlayContainer.getContainerElement().classList.add('dark-theme');
+    // this.componentClass = 'dark-theme';
   }
 
 }

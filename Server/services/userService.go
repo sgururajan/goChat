@@ -15,11 +15,11 @@ import (
 
 // UserService - UserService
 type UserService struct {
-	userRepo db.IUserRespository
+	userRepo db.IUserRepository
 }
 
 // NewUserService - creates new instance of user service
-func NewUserService(userRepository db.IUserRespository) *UserService {
+func NewUserService(userRepository db.IUserRepository) *UserService {
 	return &UserService{
 		userRepo: userRepository,
 	}
@@ -86,4 +86,9 @@ func (service *UserService) createUserInternal(user models.User) error {
 	}
 
 	return nil
+}
+
+// GetUserByID - GetUserByID
+func (service *UserService) GetUserByID(id string) (models.User, error) {
+	return service.GetUserByID(id)
 }

@@ -91,8 +91,7 @@ func (repo *UserRepository) Create(user models.User) (string, error) {
 	user.ID = NewObjectID()
 
 	err = repo.userCollection.Insert(user)
-
-	return "", nil
+	return "", err
 }
 
 // GetUserByEmail - GetUserByEmail

@@ -3,6 +3,7 @@ package mongo
 import (
 	"goChat/Server/models"
 	"goChat/Server/utils"
+	"time"
 
 	"gopkg.in/mgo.v2/bson"
 
@@ -61,6 +62,14 @@ func (repo *MessageRepository) GetMessagesByConversation(conversationID string, 
 // AddMessage - Add message
 func (repo *MessageRepository) AddMessage(message models.Message) error {
 	message.MessageID = NewObjectID()
+	message.TimeStamp = time.Now()
 	err := repo.collection.Insert(message)
 	return err
+}
+
+// UpdateMessageAsRead - UpdateMessageAsRead
+func (repo *MessageRepository) UpdateMessageAsRead(msgID, participantID string) {
+	findQuery := bson.M{"_id": msgID, "participantsState.participantID": participantID}
+	updateQuery := bson.M{"$set": bson.M{"participants.$.IsRead": true}}
+	repo.collection.Upsert(findQuery, updateQuery)
 }

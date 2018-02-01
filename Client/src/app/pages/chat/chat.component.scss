@@ -1,6 +1,8 @@
 .chat-container {
-  display: flex;
+  flex-direction: column;
   width: 100%;
+  top: 0;
+  bottom: 0;
   padding-left: 0;
   padding-right: 0;
 }
@@ -11,4 +13,17 @@
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.content-vertical-stretch {
+  top: 0;
+  bottom: 0;
+}
+
+.chat-content-noshrink {
+  flex-shrink: 0;
+}
+
+.chat-content-fillspace {
+  flex: 1 1 auto;
 }

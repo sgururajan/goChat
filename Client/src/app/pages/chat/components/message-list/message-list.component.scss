@@ -1,0 +1,46 @@
+.message-list-container {
+  padding-left: 0.25rem;
+  padding-top: 0.5rem;
+  flex-basis: auto;
+  flex-wrap: wrap;
+}
+
+.message-list-card {
+  background: #ffffff;
+  color: #292727;
+  min-width: 15rem;
+  .new-button {
+    color: green;
+    font-size: 2rem;
+    padding-left: 0.25rem;
+    padding-top: 0.25rem;
+  }
+  span {
+    padding-left: 0.40rem;
+    align-content: center;
+  }
+}
+
+.message-card {
+  padding-top: 6px;
+  padding-left: 6px;
+  padding-right: 6px;
+  &.message-card-content {
+    padding-left: 6px;
+    padding-right: 6px;
+    &>mat-nav-list.mat-list-item.mat-list-item-content {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
+}
+
+.message-list-content-border {
+  border-radius: 4px;
+}
+
+.message-content {
+  color: #222222 !important;
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+}

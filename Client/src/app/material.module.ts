@@ -8,7 +8,8 @@ import {
   MatToolbarModule,
   MatMenuModule,
   MatIconModule,
-  MatSidenavModule
+  MatSidenavModule,
+  MatListModule
 } from '@angular/material';
 import { OverlayModule } from '@angular/cdk/overlay';
 
@@ -22,6 +23,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
     MatMenuModule,
     MatSidenavModule,
     MatIconModule,
+    MatListModule,
     OverlayModule
   ],
   exports: [
@@ -33,6 +35,7 @@ import { OverlayModule } from '@angular/cdk/overlay';
     MatMenuModule,
     MatSidenavModule,
     MatIconModule,
+    MatListModule,
     OverlayModule
   ],
   declarations: []

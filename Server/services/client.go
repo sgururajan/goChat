@@ -1,7 +1,6 @@
 package services
 
 import (
-	"goChat/Server/models"
 	"goChat/Server/utils"
 	"goChat/Server/viewModels"
 	"log"
@@ -41,7 +40,7 @@ func AddClient(mRouter *MessageRouter, w http.ResponseWriter, r *http.Request) {
 	client := Client{
 		conn:   connection,
 		router: mRouter,
-		send:   make(chan models.Message),
+		send:   make(chan viewModels.Message),
 	}
 
 	mRouter.register <- &client
@@ -75,6 +74,8 @@ func (c *Client) readPump() {
 			}
 			break
 		}
+
+		c.router.routeMessage <- msg
 
 	}
 }

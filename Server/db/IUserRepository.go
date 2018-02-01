@@ -4,8 +4,8 @@ import (
 	"goChat/Server/models"
 )
 
-// IUserRespository - interface for user repository functions
-type IUserRespository interface {
+// IUserRepository - interface for user repository functions
+type IUserRepository interface {
 	Create(user models.User) (string, error)
 	GetUserByEmail(email string) (models.User, error)
 	GetUserByID(id string) (models.User, error)

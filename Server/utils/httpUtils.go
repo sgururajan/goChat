@@ -41,6 +41,7 @@ func JSONInternalServerErrorResponse(w http.ResponseWriter, data interface{}) {
 	}
 }
 
+// FailOnServerError - FailOnServerError
 func FailOnServerError(w http.ResponseWriter, msg string) {
 	http.Error(w, msg, http.StatusInternalServerError)
 }
