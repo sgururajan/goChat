@@ -74,6 +74,8 @@ func (c *Client) readPump() {
 			}
 			break
 		}
+		msg.TimeStamp = time.Now()
+		msg.Append = true
 
 		c.router.routeMessage <- msg
 

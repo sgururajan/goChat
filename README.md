@@ -1,6 +1,6 @@
-# GoChatClient
+# GoChat
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
+A simple chat application with server written in golang and the client in Anuglar 5
 
 ## Development server
 

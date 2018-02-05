@@ -17,7 +17,7 @@ func main() {
 	router := mux.NewRouter()
 
 	port := flag.Int("port", 5020, "Port number for the server to use")
-	inMemoryDb := flag.Bool("inmemory", false, "Flag to use In-Memory database. Default is false")
+	inMemoryDb := flag.Bool("inmemory", true, "Flag to use In-Memory database. Default is false")
 	flag.Parse()
 
 	log.Printf("Using inmemory db: %v", *inMemoryDb)
@@ -59,5 +59,4 @@ func main() {
 	serverAddr := fmt.Sprintf(":%d", *port)
 	log.Printf("Server running at %s", serverAddr)
 	log.Fatal(http.ListenAndServe(serverAddr, router))
-
 }

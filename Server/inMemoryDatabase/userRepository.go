@@ -37,8 +37,9 @@ func (repo *UserRepository) Create(user models.User) (string, error) {
 	}
 
 	user.ID, _ = utils.GenerateNewGUID()
+	user.PasswordHashed, _ = utils.HashPassword(user.PasswordHashed)
 	repo.users[user.ID] = user
-	return "", nil
+	return user.ID, nil
 }
 
 // GetUserByEmail - GetUserByEmail

@@ -40,6 +40,7 @@ type Token struct {
 
 // LoginResponse - LoginResponse
 type LoginResponse struct {
+	UserID      string `json:"userID"`
 	AccessToken string `json:"accessToken"`
 	FirstName   string `json:"firstName"`
 	LastName    string `json:"lastName"`
@@ -87,6 +88,7 @@ func (auth *AuthService) AuthenticateHandler(w http.ResponseWriter, r *http.Requ
 		FirstName:   user.FirstName,
 		LastName:    user.LastName,
 		NickName:    user.NickName,
+		UserID:      user.ID,
 	}
 
 	if err != nil {
@@ -98,7 +100,7 @@ func (auth *AuthService) AuthenticateHandler(w http.ResponseWriter, r *http.Requ
 	utils.JSONSuccessResponse(w, loginResponse)
 }
 
-// AuthenticationMiddleware - middleware funciton that authenticates the request using JWT
+// AuthenticationMiddleware - middleware function that authenticates the request using JWT
 func (auth *AuthService) AuthenticationMiddleware(next http.HandlerFunc) http.HandlerFunc {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		token, err := auth.validateRequest(r)
@@ -121,21 +123,21 @@ func (auth *AuthService) validateRequest(r *http.Request) (*jwt.Token, error) {
 	tokenString, err := extractTokenFromHeader(r)
 
 	if err != nil {
-		return &jwt.Token{}, fmt.Errorf("Error while extracting auth token: %s", err)
+		return &jwt.Token{}, fmt.Errorf("error while extracting auth token: %s", err)
 	}
 
 	if tokenString == "" {
-		return &jwt.Token{}, fmt.Errorf("No authentication token found")
+		return &jwt.Token{}, fmt.Errorf("no authentication token found")
 	}
 
 	token, err := jwt.Parse(tokenString, keyGetter)
 
 	if err != nil {
-		return &jwt.Token{}, fmt.Errorf("Error while validating auth token")
+		return &jwt.Token{}, fmt.Errorf("error while validating auth token")
 	}
 
 	if !token.Valid {
-		return &jwt.Token{}, fmt.Errorf("Invalid token")
+		return &jwt.Token{}, fmt.Errorf("invalid token")
 	}
 
 	return token, nil
@@ -147,13 +149,13 @@ func (auth *AuthService) parseUserFromRequest(token *jwt.Token) (models.User, er
 	claims, ok := token.Claims.(*TokenClaims)
 
 	if !ok {
-		return user, fmt.Errorf("Unable to process claims")
+		return user, fmt.Errorf("unable to process claims")
 	}
 
 	user, err := auth.userRepository.GetUserByEmail(claims.UserName)
 
 	if err != nil {
-		return user, fmt.Errorf("Unable to find user given in token. Error: %s", err)
+		return user, fmt.Errorf("unable to find user given in token. Error: %s", err)
 	}
 
 	return user, nil
@@ -168,7 +170,7 @@ func extractTokenFromHeader(r *http.Request) (string, error) {
 
 	headerParts := strings.Split(authHeader, " ")
 	if len(headerParts) != 2 && strings.ToUpper(headerParts[0]) != "BEARER" {
-		return "", errors.New("Authorization header not in correct format")
+		return "", errors.New("authorization header not in correct format")
 	}
 
 	return headerParts[1], nil

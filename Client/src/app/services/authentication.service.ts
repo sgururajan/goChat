@@ -49,4 +49,10 @@ export class AuthenticationService {
     return true;
   }
 
+  getCurrentUserID(): string {
+    let currentUser = JSON.parse(localStorage.getItem('currentUser')) as CurrentUser;
+    if (currentUser) return currentUser.userID
+    return '';
+  }
+
 }
