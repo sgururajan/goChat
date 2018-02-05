@@ -104,3 +104,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
+# IDEA files
+.idea
+

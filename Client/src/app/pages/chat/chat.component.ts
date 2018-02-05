@@ -10,17 +10,25 @@ import { OverlayContainer } from '@angular/cdk/overlay';
 export class ChatComponent implements OnInit {
 
   @ViewChild('sideNav') sideNav: MatSidenav
-  @HostBinding('class') componentClass;
+  // @HostBinding('class') componentClass;
 
-  constructor(private overlayContainer: OverlayContainer) { }
+  selectedList: string = "contacts";
+
+  constructor() { }
 
   close() {
     this.sideNav.close();
   }
 
   ngOnInit() {
-    // this.overlayContainer.getContainerElement().classList.add('dark-theme');
-    // this.componentClass = 'dark-theme';
+
+  }
+
+  onListSelectionChanged(selectedItem: string) {
+    console.log('OnListSelectionChanged: ' + selectedItem);
+    if (selectedItem && selectedItem.length > 0 && selectedItem != this.selectedList) {
+      this.selectedList = selectedItem;
+    }
   }
 
 }

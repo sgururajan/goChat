@@ -21,9 +21,34 @@
 }
 
 .chat-content-noshrink {
-  flex-shrink: 0;
+  flex-shrink: 1;
+}
+
+.chat-content-nogrow {
+  flex-grow: 0;
 }
 
 .chat-content-fillspace {
   flex: 1 1 auto;
+}
+
+.chat-list-container {
+  padding-left: 0.25rem;
+  padding-top: 0.25rem;
+  width: 350px;
+}
+
+.chat-list-card {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow: hidden;
+  flex: 0 0 350px;
+  .chat-card-content {
+    padding-left: 0px;
+    padding-right: 0px;
+    >.chat-nav-list {
+      padding-top: 0 !important;
+    }
+  }
 }

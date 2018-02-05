@@ -3,38 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="e8f204ab-15ee-41c1-8d17-1f7cdef039e5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../Client/src/_globals.scss" afterPath="$PROJECT_DIR$/../Client/src/_globals.scss" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/app/material.module.ts" afterPath="$PROJECT_DIR$/../Client/src/app/material.module.ts" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/authentication/register/register.component.scss" afterPath="$PROJECT_DIR$/../Client/src/app/pages/authentication/register/register.component.scss" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/app/app.component.scss" afterPath="$PROJECT_DIR$/../Client/src/app/app.component.scss" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/app/app.module.ts" afterPath="$PROJECT_DIR$/../Client/src/app/app.module.ts" />
       <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/chat.component.html" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/chat.component.html" />
       <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/chat.component.scss" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/chat.component.scss" />
       <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/chat.component.ts" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/chat.component.ts" />
       <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/chat.module.ts" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/chat.module.ts" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/chat-toolbar/chat-toolbar.component.html" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/chat-toolbar/chat-toolbar.component.html" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/chat-toolbar/chat-toolbar.component.scss" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/chat-toolbar/chat-toolbar.component.scss" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/chat-workspace/chat-workspace.component.html" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/chat-workspace/chat-workspace.component.html" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/chat-workspace/chat-workspace.component.scss" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/chat-workspace/chat-workspace.component.scss" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/message-list/message-list.component.html" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/message-list/message-list.component.html" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/message-list/message-list.component.scss" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/message-list/message-list.component.scss" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/message-list/message-list.component.ts" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/message-list/message-list.component.ts" />
       <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/side-bar/side-bar.component.html" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/side-bar/side-bar.component.html" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/side-bar/side-bar.component.scss" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/side-bar/side-bar.component.scss" />
-      <change beforePath="$PROJECT_DIR$/../Client/src/styles.scss" afterPath="$PROJECT_DIR$/../Client/src/styles.scss" />
-      <change beforePath="$PROJECT_DIR$/db/IConversationReporitory.go" afterPath="$PROJECT_DIR$/db/IConversationReporitory.go" />
-      <change beforePath="$PROJECT_DIR$/db/IMessageRepository.go" afterPath="$PROJECT_DIR$/db/IMessageRepository.go" />
-      <change beforePath="$PROJECT_DIR$/db/IUserRepository.go" afterPath="$PROJECT_DIR$/db/IUserRepository.go" />
+      <change beforePath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/side-bar/side-bar.component.ts" afterPath="$PROJECT_DIR$/../Client/src/app/pages/chat/components/side-bar/side-bar.component.ts" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/goChatServer.go" afterPath="$PROJECT_DIR$/goChatServer.go" />
-      <change beforePath="$PROJECT_DIR$/models/conversation.go" afterPath="$PROJECT_DIR$/models/conversation.go" />
-      <change beforePath="$PROJECT_DIR$/models/message.go" afterPath="$PROJECT_DIR$/models/message.go" />
-      <change beforePath="$PROJECT_DIR$/models/user.go" afterPath="$PROJECT_DIR$/models/user.go" />
-      <change beforePath="$PROJECT_DIR$/mongo/mongoConvesrationRepository.go" afterPath="$PROJECT_DIR$/mongo/mongoConvesrationRepository.go" />
+      <change beforePath="$PROJECT_DIR$/inMemoryDatabase/messageRepository.go" afterPath="$PROJECT_DIR$/inMemoryDatabase/messageRepository.go" />
       <change beforePath="$PROJECT_DIR$/mongo/mongoMessageRepository.go" afterPath="$PROJECT_DIR$/mongo/mongoMessageRepository.go" />
-      <change beforePath="$PROJECT_DIR$/mongo/mongoUserRepository.go" afterPath="$PROJECT_DIR$/mongo/mongoUserRepository.go" />
-      <change beforePath="$PROJECT_DIR$/mongo/mongoUtils.go" afterPath="$PROJECT_DIR$/mongo/mongoUtils.go" />
-      <change beforePath="$PROJECT_DIR$/services/auth.go" afterPath="$PROJECT_DIR$/services/auth.go" />
-      <change beforePath="$PROJECT_DIR$/services/client.go" afterPath="$PROJECT_DIR$/services/client.go" />
-      <change beforePath="$PROJECT_DIR$/services/conversationService.go" afterPath="$PROJECT_DIR$/services/conversationService.go" />
-      <change beforePath="$PROJECT_DIR$/services/messageRouter.go" afterPath="$PROJECT_DIR$/services/messageRouter.go" />
       <change beforePath="$PROJECT_DIR$/services/messageService.go" afterPath="$PROJECT_DIR$/services/messageService.go" />
-      <change beforePath="$PROJECT_DIR$/services/userService.go" afterPath="$PROJECT_DIR$/services/userService.go" />
-      <change beforePath="$PROJECT_DIR$/utils/common.go" afterPath="$PROJECT_DIR$/utils/common.go" />
-      <change beforePath="$PROJECT_DIR$/utils/crypto.go" afterPath="$PROJECT_DIR$/utils/crypto.go" />
-      <change beforePath="$PROJECT_DIR$/utils/httpUtils.go" afterPath="$PROJECT_DIR$/utils/httpUtils.go" />
-      <change beforePath="$PROJECT_DIR$/viewModels/messageViewModel.go" afterPath="$PROJECT_DIR$/viewModels/messageViewModel.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,16 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="userRepository.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inMemoryDatabase/userRepository.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1054">
-              <caret line="67" column="34" lean-forward="false" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="conversationViewModel.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/viewModels/conversationViewModel.go">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="conversationService.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="conversationService.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/conversationService.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+            <state relative-caret-position="301">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -85,21 +62,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IConversationReporitory.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/IConversationReporitory.go">
+      <file leaf-file-name="goChatServer.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/goChatServer.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+            <state relative-caret-position="565">
+              <caret line="49" column="71" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="71" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="goChatServer.go" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/goChatServer.go">
+      <file leaf-file-name="messageService.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/messageService.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="616">
+              <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -110,6 +87,46 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
               <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mongoMessageRepository.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongo/mongoMessageRepository.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="520">
+              <caret line="57" column="107" lean-forward="true" selection-start-line="57" selection-start-column="107" selection-end-line="57" selection-end-column="107" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messageRepository.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inMemoryDatabase/messageRepository.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messageViewModel.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/viewModels/messageViewModel.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="client.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/client.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="75" column="9" lean-forward="true" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -127,9 +144,12 @@
         <option value="$PROJECT_DIR$/inMemoryDatabase/userRepository.go" />
         <option value="$PROJECT_DIR$/models/user.go" />
         <option value="$PROJECT_DIR$/viewModels/conversationViewModel.go" />
-        <option value="$PROJECT_DIR$/goChatServer.go" />
         <option value="$PROJECT_DIR$/services/userService.go" />
         <option value="$PROJECT_DIR$/services/conversationService.go" />
+        <option value="$PROJECT_DIR$/goChatServer.go" />
+        <option value="$PROJECT_DIR$/services/messageService.go" />
+        <option value="$PROJECT_DIR$/mongo/mongoMessageRepository.go" />
+        <option value="$PROJECT_DIR$/inMemoryDatabase/messageRepository.go" />
       </list>
     </option>
   </component>
@@ -177,6 +197,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,8 +235,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,8 +276,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18020834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -287,6 +308,205 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/goChatServer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/conversationService.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inMemoryDatabase/userRepository.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="67" column="34" lean-forward="false" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewModels/conversationViewModel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/userService.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goChatServer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/IConversationReporitory.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/conversationService.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inMemoryDatabase/userRepository.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="67" column="34" lean-forward="false" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewModels/conversationViewModel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/userService.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/IConversationReporitory.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goChatServer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/conversationService.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inMemoryDatabase/userRepository.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="67" column="34" lean-forward="false" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goChatServer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/IConversationReporitory.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewModels/conversationViewModel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/userService.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/conversationService.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/inMemoryDatabase/userRepository.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
@@ -407,34 +627,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goChatServer.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/IConversationReporitory.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="59" lean-forward="false" selection-start-line="9" selection-start-column="59" selection-end-line="9" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/viewModels/conversationViewModel.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
           <folding />
         </state>
       </provider>
@@ -447,10 +643,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/services/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="75" column="9" lean-forward="true" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongo/mongoMessageRepository.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="57" column="107" lean-forward="true" selection-start-line="57" selection-start-column="107" selection-end-line="57" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inMemoryDatabase/messageRepository.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewModels/conversationViewModel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="49" lean-forward="false" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/services/conversationService.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="23" column="5" lean-forward="false" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
+        <state relative-caret-position="301">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goChatServer.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="49" column="71" lean-forward="false" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/messageService.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="53" column="36" lean-forward="false" selection-start-line="53" selection-start-column="36" selection-end-line="53" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/viewModels/messageViewModel.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>

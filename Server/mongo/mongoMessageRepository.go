@@ -53,9 +53,9 @@ func (repo *MessageRepository) ensureIndexes() {
 }
 
 // GetMessagesByConversation - GetMessagesByConversation
-func (repo *MessageRepository) GetMessagesByConversation(conversationID string, page, count int) ([]models.Message, error) {
+func (repo *MessageRepository) GetMessagesByConversation(conversationID string, skipCount, count int) ([]models.Message, error) {
 	var messages []models.Message
-	err := repo.collection.Find(bson.M{"conversationID": conversationID}).Sort("-timeStamp").Skip((page - 1) * count).Limit(count).All(&messages)
+	err := repo.collection.Find(bson.M{"conversationID": conversationID}).Sort("-timeStamp").Skip(skipCount).Limit(count).All(&messages)
 	return messages, err
 }
 

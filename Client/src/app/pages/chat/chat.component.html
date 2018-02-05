@@ -10,8 +10,9 @@
     <mat-sidenav-content>
       <app-chat-toolbar [sideNav]="sideNav"></app-chat-toolbar>
       <div class="flex-full-height">
-        <app-side-bar class="content-vertical-stretch"></app-side-bar>
-        <app-message-list class="chat-content-noshrink"></app-message-list>
+        <app-side-bar class="content-vertical-stretch" (listSelectionChanged)="onListSelectionChanged($event)"></app-side-bar>
+        <app-message-list class="chat-content-noshrink" *ngIf="selectedList==='message'"></app-message-list>
+        <app-contact-list class="chat-content-noshrink" *ngIf="selectedList==='contacts'"></app-contact-list>
         <app-chat-workspace class="chat-content-fillspace"></app-chat-workspace>
       </div>
     </mat-sidenav-content>

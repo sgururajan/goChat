@@ -1,8 +1,16 @@
 .message-list-container {
   padding-left: 0.25rem;
   padding-top: 0.5rem;
-  flex-basis: auto;
   flex-wrap: wrap;
+  overflow: hidden;
+  width: 350px;
+  >div.mat-list-item-content {
+    padding-left: 0 !important;
+  }
+}
+
+.mat-list-item-content {
+  padding-left: 0;
 }
 
 .message-list-card {
@@ -21,18 +29,39 @@
   }
 }
 
-.message-card {
-  padding-top: 6px;
-  padding-left: 6px;
-  padding-right: 6px;
-  &.message-card-content {
-    padding-left: 6px;
-    padding-right: 6px;
-    &>mat-nav-list.mat-list-item.mat-list-item-content {
-      padding-left: 4px;
-      padding-right: 4px;
+.message-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .mat-list-item .mat-list-item-content {
+    padding-right: 0 !important;
+  }
+  >.message-item-list-item {
+    padding-right: 0 !important;
+    overflow: hidden;
+    >:mat-list-item-content {
+      padding-right: 0 !important;
     }
   }
+}
+
+.message-card {
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  overflow: hidden;
+  flex: 0 0 350px;
+  .message-card-content {
+    padding-left: 0px;
+    padding-right: 0px;
+    >.message-nav-list {
+      padding-top: 0 !important;
+    }
+  }
+}
+
+div.mat-list-item-content {
+  padding-left: 0 !important;
 }
 
 .message-list-content-border {
@@ -43,4 +72,10 @@
   color: #222222 !important;
   padding-left: 2px !important;
   padding-right: 2px !important;
+}
+
+.message-item-more-button {
+  justify-content: flex-end;
+  align-items: center;
+  display: none;
 }

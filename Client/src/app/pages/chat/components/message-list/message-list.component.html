@@ -1,17 +1,44 @@
-<div class="message-list-container flex-full-height" layout="row" layout-fill>
+<div class="chat-list-container flex-full-height">
 
-  <mat-card class="message-card">
-    <mat-card-content class="message-card-content">
-      <mat-nav-list>
+  <mat-card class="chat-list-card">
+    <mat-card-content class="chat-card-content">
+      <mat-nav-list class="chat-nav-list">
         <mat-list-item>
-          <mat-icon matListIcon class="mat-18">add_circle</mat-icon>
-          <h3>New Conversation</h3>
+          <img matListAvatar initialAvatar initial="+" bgColor="#388E3C" alt="+" class="avatar">
+          <p matLine>
+            <span>New Conversation</span>
+          </p>
         </mat-list-item>
-        <mat-list-item>
-          <mat-icon matListIcon class="mat-18">add_circle</mat-icon>
-          <h3 matLine>paul@gochat.com</h3>
-          <p matLine>How are you doing?</p>
+        <mat-list-item class="message-item-list-item" appShowOnMouseOver [template]="moreDiv">
+          <img matListAvatar initialAvatar initial="P" bgColor="grey" alt="P" class="avatar">
+          <p matLine style="display:flex;flex-direction:row;">
+            <span style="justify-content:flex-start">paul@gochat.com</span>
+            <span style="flex:1 1 auto"></span>
+            <span style="justify-content:flex-end">1.28PM</span>
+          </p>
+
+          <span matLine style="text-overflow:clip">How are you doing? and this is some really long text to test the length and this will still expand</span>
+          <!-- <button mat-icon-button style="justify-content:flex-end; align-items:center">
+            <mat-icon class="mat-18">more_vert</mat-icon>
+          </button> -->
+
+          <div #moreDiv class="message-item-more-button">
+            <button mat-icon-button [matMenuTriggerFor]="moreMenu">
+              <mat-icon class="mat-18">more_vert</mat-icon>
+            </button>
+
+            <mat-menu #moreMenu="matMenu">
+              <button mat-menu-item>
+                <span>Archive</span>
+              </button>
+              <button mat-menu-item>
+                <span>Delete</span>
+              </button>
+            </mat-menu>
+          </div>
+
         </mat-list-item>
+
       </mat-nav-list>
       <!-- <mat-list>
         <mat-list-item>

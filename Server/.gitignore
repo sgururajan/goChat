@@ -6,3 +6,6 @@ debug*
 
 # vs code
 .vscode
+
+# idea files
+.idea

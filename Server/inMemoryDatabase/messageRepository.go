@@ -22,9 +22,9 @@ func NewMessageRepository() *MessageRepository {
 }
 
 // GetMessagesByConversation - GetMessagesByConversation
-func (repo *MessageRepository) GetMessagesByConversation(conversationID string, page, count int) ([]models.Message, error) {
+func (repo *MessageRepository) GetMessagesByConversation(conversationID string, skip, count int) ([]models.Message, error) {
 	var messages []models.Message
-	pageStart := (page - 1) * count
+	pageStart := skip
 	counter := 0
 	for _, m := range repo.messages {
 		if m.ConversationID == conversationID {

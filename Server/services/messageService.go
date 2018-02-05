@@ -32,15 +32,15 @@ func (svc *MessageService) AddMessage(message models.Message) error {
 func (svc *MessageService) GetMessageHandler(w http.ResponseWriter, r *http.Request) {
 	args := mux.Vars(r)
 	convID := args["conversationId"]
-	page, err := strconv.Atoi(args["page"])
+	skip, err := strconv.Atoi(args["skip"])
 	if err != nil {
-		page = 1
+		skip = 0
 	}
 	count, err := strconv.Atoi(args["count"])
 	if err != nil {
 		count = 10
 	}
-	msgList, err := svc.repo.GetMessagesByConversation(convID, page, count)
+	msgList, err := svc.repo.GetMessagesByConversation(convID, skip, count)
 	if err != nil {
 		utils.JSONInternalServerErrorResponse(w, err)
 		return

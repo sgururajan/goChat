@@ -12,6 +12,9 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { AuthGuard } from './services/auth.guard';
 import { AuthenticationService } from './services/authentication.service';
+import { DirectivesModule } from './directives/directives.module';
+import { WebsocketService } from './services/websocket.service';
+import { ChatService } from './services/chat.service';
 
 
 
@@ -25,9 +28,9 @@ import { AuthenticationService } from './services/authentication.service';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgbModule.forRoot(),
     AppRoutingModule,
     MaterialModule,
+    DirectivesModule,
     JwtModule.forRoot({
       config: {
         tokenGetter: () => {
@@ -39,7 +42,9 @@ import { AuthenticationService } from './services/authentication.service';
   ],
   providers: [
     AuthGuard,
-    AuthenticationService
+    AuthenticationService,
+    WebsocketService,
+    ChatService
   ],
   bootstrap: [AppComponent]
 })

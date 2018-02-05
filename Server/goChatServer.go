@@ -47,7 +47,7 @@ func main() {
 	router.HandleFunc("/api/login", authService.AuthenticateHandler).Methods(http.MethodPost)
 	router.HandleFunc("/api/register", userService.SignupHandlerWithNext(authService.AuthenticateHandler)).Methods(http.MethodPost)
 	router.HandleFunc("/api/conversations", authService.AuthenticationMiddleware(convService.GetConversationHandler)).Methods(http.MethodGet)
-	router.HandleFunc("/api/getmessages/{conversationID}/{page}/{count}", authService.AuthenticationMiddleware(messageService.GetMessageHandler)).Methods(http.MethodGet)
+	router.HandleFunc("/api/getmessages/{conversationID}/{skip}/{count}", authService.AuthenticationMiddleware(messageService.GetMessageHandler)).Methods(http.MethodGet)
 	router.HandleFunc("/api/updatemessageasread/{messageId}", authService.AuthenticationMiddleware(messageService.UpdateMessageAsRead)).Methods(http.MethodPost)
 
 	router.HandleFunc("/api/ws", authService.AuthenticationMiddleware(func(w http.ResponseWriter, r *http.Request) {
